@@ -82,7 +82,8 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-medium mb-1">Address</h4>
                       <p className="text-muted-foreground">
-                        123 Tech Boulevard
+                        🇳🇬 10 Lord Lugard street Abuja Nigeria, <br />  🇬🇧 52 Woodbank
+                        Road Kent BR1 5HH
                         <br />
                         Innovation District
                         <br />
