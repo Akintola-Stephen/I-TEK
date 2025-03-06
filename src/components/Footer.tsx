@@ -93,16 +93,18 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-itek-400 shrink-0 mt-1" />
                 <span className="text-slate-300">
-                  123 Tech Boulevard, Innovation District, London, UK
+                  🇳🇬 Lord Lugard street Abuja Nigeria <br /> 🇬🇧 52 Woodbank Road Kent
+                  BR1 5HH
                 </span>
               </li>
+
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-itek-400 shrink-0" />
                 <a
                   href="tel:+441234567890"
                   className="text-slate-300 hover:text-itek-400 transition-colors"
                 >
-                  +44 123 456 7890
+                  +447545375860, +23409078532121, +234 816 989 4950,
                 </a>
               </li>
               <li className="flex items-center space-x-3">
