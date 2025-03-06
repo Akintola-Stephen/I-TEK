@@ -112,7 +112,7 @@ const ContactPage = () => {
                         href="tel:+441234567890"
                         className="text-itek-600 hover:text-itek-700 transition-colors"
                       >
-                        +44 123 456 7890
+                        +447545375860, +23409078532121, +234 816 989 4950
                       </a>
                     </div>
                   </div>
