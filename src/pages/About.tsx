@@ -50,12 +50,20 @@ const AboutPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white py-20 md:py-28">
-        <div className="absolute inset-0 bg-mesh-pattern opacity-5" />
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl animate-fade-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About I-TEK</h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+      <section className="hero-section">
+        <div
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=2000&h=1200')",
+          }}
+        />
+        <div className="hero-overlay" />
+        <div className="hero-bg-pattern" />
+        <div className="hero-content">
+          <div className="max-w-3xl mx-auto text-center animate-fade-up">
+            <h1 className="hero-title">About I-TEK</h1>
+            <p className="hero-description">
               A complete hardware and software company that specializes in
               providing top-notch applications and state-of-the-art surveillance
               devices.

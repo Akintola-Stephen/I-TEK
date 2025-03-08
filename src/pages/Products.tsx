@@ -4,7 +4,6 @@ import { SectionHeader } from "../components/ui/section-header";
 import { products } from "../data/products";
 import { ProductCard } from "../components/ui/product-card";
 
-
 const ProductsPage = () => {
   useEffect(() => {
     document.title = "Products | I-TEK";
@@ -25,14 +24,20 @@ const ProductsPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white py-20 md:py-28">
-        <div className="absolute inset-0 bg-mesh-pattern opacity-5" />
-        <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl animate-fade-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Our Products
-            </h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+      <section className="hero-section">
+        <div
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=2000&h=1200')",
+          }}
+        />
+        <div className="hero-overlay" />
+        <div className="hero-bg-pattern" />
+        <div className="hero-content">
+          <div className="max-w-3xl mx-auto text-center animate-fade-up">
+            <h1 className="hero-title">Our Products</h1>
+            <p className="hero-description">
               Explore our range of innovative security and intelligence
               solutions designed to meet the most demanding requirements.
             </p>
@@ -50,17 +55,17 @@ const ProductsPage = () => {
 
           {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-2 mb-12 animate-fade-up [animation-delay:400ms]">
-            {categories.map((category) => (
+            {categories.map((category, index) => (
               <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
+                key={index}
+                onClick={() => setSelectedCategory(category as string)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category
                     ? "bg-itek-600 text-white"
                     : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700"
                 }`}
               >
-                {category}
+                {category as React.ReactNode}
               </button>
             ))}
           </div>

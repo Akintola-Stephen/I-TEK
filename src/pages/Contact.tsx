@@ -19,12 +19,14 @@ const ContactPage = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: { target: { name: any; value: any } }) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -47,12 +49,20 @@ const ContactPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white py-20 md:py-28">
-        <div className="absolute inset-0 bg-mesh-pattern opacity-5" />
-        <div className="container mx-auto px-4 relative">
+      <section className="hero-section">
+        <div
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=2000&h=1200')",
+          }}
+        />
+        <div className="hero-overlay" />
+        <div className="hero-bg-pattern" />
+        <div className="hero-content">
           <div className="max-w-3xl animate-fade-up">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-slate-300 leading-relaxed">
+            <h1 className="hero-title">Contact Us</h1>
+            <p className="hero-description">
               Get in touch with our team to discuss how I-TEK solutions can meet
               your security and intelligence needs.
             </p>
@@ -82,8 +92,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-medium mb-1">Address</h4>
                       <p className="text-muted-foreground">
-                        🇳🇬 10 Lord Lugard street Abuja Nigeria, <br />  🇬🇧 52 Woodbank
-                        Road Kent BR1 5HH
+                        123 Tech Boulevard
                         <br />
                         Innovation District
                         <br />
@@ -113,7 +122,7 @@ const ContactPage = () => {
                         href="tel:+441234567890"
                         className="text-itek-600 hover:text-itek-700 transition-colors"
                       >
-                        +447545375860, +23409078532121, +234 816 989 4950
+                        +44 123 456 7890
                       </a>
                     </div>
                   </div>
