@@ -8,7 +8,7 @@ interface ProductCardProps {
   imageUrl: string;
   category: string;
   className?: string;
-  style: any
+  style: any;
 }
 
 export function ProductCard({

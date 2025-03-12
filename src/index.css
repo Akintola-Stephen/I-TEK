@@ -163,6 +163,28 @@
   @apply text-xl font-medium text-slate-200 max-w-3xl text-center mx-auto;
 }
 
+/* Video Hero Section */
+.video-hero-section {
+  @apply relative overflow-hidden h-screen w-full;
+}
+
+.video-container {
+  @apply absolute inset-0 w-full h-full;
+}
+
+.hero-video {
+  @apply absolute inset-0 w-full h-full object-cover;
+  z-index: 1;
+}
+
+.video-overlay {
+  @apply absolute inset-0 bg-black/40 z-10;
+}
+
+.video-hero-section .hero-content {
+  @apply absolute inset-0 z-20 flex items-center justify-center;
+}
+
 /* Typography enhancement classes */
 .heading-xl {
   @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;

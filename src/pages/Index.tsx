@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
@@ -16,63 +16,108 @@ import { SectionHeader } from "../components/ui/section-header";
 const features = [
   {
     icon: Shield,
-    title: 'Advanced Security',
-    description: 'State-of-the-art security solutions for intelligence and surveillance operations.',
+    title: "Advanced Security",
+    description:
+      "State-of-the-art security solutions for intelligence and surveillance operations.",
   },
   {
     icon: Server,
-    title: 'Hardware Solutions',
-    description: 'Cutting-edge hardware designed for optimal performance in critical environments.',
+    title: "Hardware Solutions",
+    description:
+      "Cutting-edge hardware designed for optimal performance in critical environments.",
   },
   {
     icon: Database,
-    title: 'Data Processing',
-    description: 'Sophisticated data processing systems that transform raw data into actionable intelligence.',
+    title: "Data Processing",
+    description:
+      "Sophisticated data processing systems that transform raw data into actionable intelligence.",
   },
   {
     icon: Cpu,
-    title: 'Custom Applications',
-    description: 'Bespoke software applications tailored to meet specific operational requirements.',
+    title: "Custom Applications",
+    description:
+      "Bespoke software applications tailored to meet specific operational requirements.",
   },
   {
     icon: Lock,
-    title: 'Digital Security',
-    description: 'Comprehensive digital security measures to protect sensitive information.',
+    title: "Digital Security",
+    description:
+      "Comprehensive digital security measures to protect sensitive information.",
   },
   {
     icon: Zap,
-    title: 'Operational Efficiency',
-    description: 'Solutions designed to streamline operations and enhance productivity.',
+    title: "Operational Efficiency",
+    description:
+      "Solutions designed to streamline operations and enhance productivity.",
   },
 ];
 
 const HomePage = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   useEffect(() => {
     document.title = "I-TEK | Information Solutions";
+
+    // Ensure video plays correctly
+    const videoElement = videoRef.current;
+    if (videoElement) {
+      // Try playing immediately on mount
+      const playPromise = videoElement.play();
+
+      // Handle play promise properly to avoid AbortError
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.error("Initial video playback failed:", error);
+
+          // Try again after a short delay
+          setTimeout(() => {
+            if (videoRef.current) {
+              videoRef.current
+                .play()
+                .catch((e) => console.error("Retry video playback failed:", e));
+            }
+          }, 1000);
+        });
+      }
+    }
   }, []);
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000&h=1200')" }}
-        />
-        <div className="hero-overlay" />
-        <div className="hero-bg-pattern" />
-        <div className="hero-content">
+      {/* Hero Section with Video Background */}
+      <section className="video-hero-section">
+        <div className="video-container">
+          <video
+            ref={videoRef}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="hero-video"
+            poster="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000&h=1200"
+          >
+            <source
+              src="https://static.nike.com/a/videos/q_90/61c452cc-a0e9-4a42-b67e-83ed3624ea6c/video.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div className="video-overlay"></div>
+        </div>
+        <div className="hero-content flex flex-col items-center justify-center min-h-[70vh]">
           <div className="max-w-3xl mx-auto text-center animate-fade-up">
             <div className="inline-block px-4 py-1.5 bg-itek-100 text-itek-700 rounded-full text-sm font-semibold mb-2">
               Innovation in Technology
             </div>
-            <h1 className="hero-title">
+            <h1 className="hero-title text-center">
               I-TEK Information Solutions Ltd
             </h1>
-            <p className="hero-description">
-              Specialized in providing top-notch application and state-of-the-art surveillance devices that enhance intelligence expertise across the globe.
+            <p className="hero-description text-center mx-auto">
+              Specialized in providing top-notch application and
+              state-of-the-art surveillance devices that enhance intelligence
+              expertise across the globe.
             </p>
-            <div className="flex flex-wrap gap-4 pt-4 justify-center">
+            <div className="flex flex-wrap gap-4 pt-6 justify-center">
               <Link
                 to="/products"
                 className="inline-flex h-11 items-center justify-center rounded-md bg-itek-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-itek-700 focus:outline-none focus:ring-2 focus:ring-itek-400 focus:ring-offset-2"
@@ -98,7 +143,7 @@ const HomePage = () => {
             title="Our Solutions"
             subtitle="I-TEK provides comprehensive security and intelligence solutions designed with operational excellence."
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {features.map((feature, index) => (
               <FeatureCard
@@ -124,10 +169,14 @@ const HomePage = () => {
               </h2>
               <div className="space-y-4 text-lg">
                 <p>
-                  I-TEK is a complete hardware and software company that specializes in providing top-notch applications and state-of-the-art surveillance devices.
+                  I-TEK is a complete hardware and software company that
+                  specializes in providing top-notch applications and
+                  state-of-the-art surveillance devices.
                 </p>
                 <p>
-                  Our aims and pledges to our reputable clients are deeply rooted in how our devices are designed with operational ease to ensure comprehensive security coverage.
+                  Our aims and pledges to our reputable clients are deeply
+                  rooted in how our devices are designed with operational ease
+                  to ensure comprehensive security coverage.
                 </p>
                 <div className="pt-6">
                   <Link
@@ -155,9 +204,12 @@ const HomePage = () => {
 
       {/* CTA Section */}
       <section className="hero-section">
-        <div 
+        <div
           className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=2000&h=1200')" }}
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=2000&h=1200')",
+          }}
         />
         <div className="hero-overlay" />
         <div className="hero-bg-pattern" />
@@ -167,7 +219,8 @@ const HomePage = () => {
               Ready to Transform Your Security Infrastructure?
             </h2>
             <p className="text-xl text-itek-100 mb-8 max-w-2xl mx-auto">
-              Contact us today to discover how our solutions can enhance your intelligence and security operations.
+              Contact us today to discover how our solutions can enhance your
+              intelligence and security operations.
             </p>
             <Link
               to="/contact"
