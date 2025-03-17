@@ -1,5 +1,4 @@
 export const products = [
-
   // Surveillance
   {
     id: "1",
@@ -248,7 +247,6 @@ HD Quality Videos: With StealthView, compromise is a thing of the past. Record s
       Compliance: "ISO 27001, SOC 2 Type II",
     },
   },
-
 
   {
     id: "secure-communication-system",

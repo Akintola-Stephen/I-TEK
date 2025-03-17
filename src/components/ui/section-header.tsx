@@ -1,4 +1,5 @@
 import { cn } from "../../lib/utils";
+import { motion } from "framer-motion";
 
 interface SectionHeaderProps {
   title: string;
@@ -13,8 +14,35 @@ export function SectionHeader({
   alignment = "center",
   className,
 }: SectionHeaderProps) {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: {
+      y: 20,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      },
+    },
+  };
+
   return (
-    <div
+    <motion.div
       className={cn(
         "space-y-4 mb-10",
         {
@@ -24,15 +52,25 @@ export function SectionHeader({
         },
         className
       )}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={containerVariants}
     >
-      <h2 className="text-3xl md:text-4xl font-bold tracking-tight animate-fade-up [animation-delay:200ms]">
+      <motion.h2
+        className="text-3xl md:text-4xl font-bold tracking-tight letter-spacing-[-0.02em]"
+        variants={itemVariants}
+      >
         {title}
-      </h2>
+      </motion.h2>
       {subtitle && (
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-up [animation-delay:400ms]">
+        <motion.p
+          className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-medium leading-relaxed"
+          variants={itemVariants}
+        >
           {subtitle}
-        </p>
+        </motion.p>
       )}
-    </div>
+    </motion.div>
   );
 }

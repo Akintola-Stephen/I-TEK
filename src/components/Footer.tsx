@@ -93,7 +93,7 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-itek-400 shrink-0 mt-1" />
                 <span className="text-slate-300">
-                  🇳🇬 Lord Lugard street Abuja Nigeria <br /> 🇬🇧 52 Woodbank Road Kent
+                  🇳🇬10, Lord Lugard street Abuja Nigeria <br /> 🇬🇧 52 Woodbank Road Kent
                   BR1 5HH
                 </span>
               </li>
