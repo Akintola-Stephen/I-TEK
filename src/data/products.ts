@@ -1,506 +1,1017 @@
+import traffic from "../assets/images/Traffic Management System/Screenshot 2025-03-19 at 10.23.17.png";
+
 export const products = [
-  // Surveillance
-  {
-    id: "1",
-    name: "Best long range sony WIFI LPR security Camera 4G optional wireless ANPR cameras system",
-    category: "Surveillance / Security",
-    imageUrl:
-      "https://www.4gspycamera.com/wp-content/uploads/2023/04/4g-camera-4.jpg",
-    description:
-      "It can also support mobile License Plate Recognition if the LPR camera system built-in battery. Mobile LPR camera systems can be put on a police car, then it is an LPR police camera",
-    fullDescription: `The one is the Best 4G WIFI wireless camera mobile license plate capture system 1080p HD SONY LPR camera for law enforcement
-It can also support mobile License Plate Recognition if the LPR camera system built-in battery. Mobile LPR camera systems can be put on a police car, then it is an LPR police camera
-  
-  The system features:
-  - 4K ultra-high-definition cameras with night vision capabilities
-  - AI-powered real-time analytics for threat detection
-  - Facial recognition and object tracking
-  - Motion detection with customizable sensitivity
-  - Secure cloud storage with end-to-end encryption
-  - Mobile applications for remote monitoring
-  
-  Designed for ease of use, the Surveillance System Pro can be deployed in various environments from government facilities to corporate headquarters, providing reliable security monitoring around the clock.`,
-    features: [
-      "AI-powered threat detection",
-      "4K resolution with night vision",
-      "Facial recognition technology",
-      "Secure cloud storage",
-      "Remote access via mobile app",
-      "Custom alert configurations",
-    ],
-    specifications: {
-      "Model": "GSIP-LPR01-2M",
-      "Resolution": "1080P 2MP",
-      "Image Sensor": "1/2.8′  Color CMOS Sensor 1080P ,0. 001LUX",
-      "IR Distance": "300M",
-      WDR: "120DB super WDR",
-      "Video Frame Rate": "1920×1080@25fps;1920×1080@30fps",
-      "Video compressing": "H.264",
-      "Power": "12V 2A / 3g 4g solar power battery optional",
-      "IRIS": "auto iris",
-      "Remote view": "Mobile app and PC"
-    },
-  },
-
-  {
-    id: "2",
-    name: "Glasses with Built in HD Spy Video Camera",
-    category: "Surveillance / Security",
-    imageUrl:
-      "https://www.spygadgets4u.co.uk/user/products/large/Glasses%20with%20Built%20in%20HD%20Spy%20Video%20Camera%202.jpg",
-    description:
-      "Unveil a world where technology meets discretion with our groundbreaking StealthView HD Glasses. Designed for anyone in need of discreet recording capabilities, these glasses offer an unparalleled blend of style, functionality, and cutting-edge features.",
-    fullDescription: `Hidden Camera Lens: Seamlessly integrated into a slim, unassuming frame, the camera lens is virtually undetectable, ensuring your surveillance remains undercover. Capture your surroundings without drawing any attention.
-
-HD Quality Videos: With StealthView, compromise is a thing of the past. Record strikingly clear HD videos, capturing every detail with precision. Whether it's for professional use or personal documentation, expect nothing less than crystal-clear quality.
-
-  
-  The system features:
-  - 4K ultra-high-definition cameras with night vision capabilities
-  - AI-powered real-time analytics for threat detection
-  - Facial recognition and object tracking
-  - Motion detection with customizable sensitivity
-  - Secure cloud storage with end-to-end encryption
-  - Mobile applications for remote monitoring
-  
-  Designed for ease of use, the Surveillance System Pro can be deployed in various environments from government facilities to corporate headquarters, providing reliable security monitoring around the clock.`,
-    features: [
-      "Hidden camera lens",
-      "HD quality videos",
-      "Video and audio recording",
-      "Record exactly what you see",
-      "Motion detection",
-      "Crystal clear lenses",
-    ],
-    specifications: {
-      "Video Compression Format": "H.264",
-      "Application": "Indoor, Outdoor",
-      "Resolution": "1080P",
-      "Charging voltage": "DC-5V",
-      "Video Format": "AVI",
-      "Charging Time": "About: 1.5 hours",
-      "Video Coding": "H.264"
-    },
-  },
-
+  // Traffic Management System / Car Park System
   {
     id: "3",
-    name: "2K Spy Camera with 180 Day Battery, Night Vision and Motion Detection",
-    category: "Surveillance / Security",
-    imageUrl:
-      "https://www.spygadgets4u.co.uk/user/products/large/2K%20Camera%20with%20180%20Day%20Battery,%20Night%20Vision%20and%20Motion%20Detection%202.jpg",
-    description:
-      "Unleash the Power of Stealth with Our 2K Spy Camera!",
-    fullDescription: `Introducing the ultimate blend of technology and discretion - the 2K Ultra HD Spy Camera. Designed for the modern surveillance enthusiast, a state-of-the-art spy camera that captures life's moments in stunning clarity,
-
-  
-  The system features:
-  - 4K ultra-high-definition cameras with night vision capabilities
-  - AI-powered real-time analytics for threat detection
-  - Facial recognition and object tracking
-  - Motion detection with customizable sensitivity
-  - Secure cloud storage with end-to-end encryption
-  - Mobile applications for remote monitoring
-  
-  Designed for ease of use, the Surveillance System Pro can be deployed in various environments from government facilities to corporate headquarters, providing reliable security monitoring around the clock.`,
+    name: "Smart Traffic Flow Analyzer",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: traffic,
+    description: "An advanced system to monitor and optimize traffic flow in real-time, reducing congestion and improving road safety.",
+    fullDescription: "The Smart Traffic Flow Analyzer uses AI-driven algorithms to monitor vehicle movement, predict traffic patterns, and optimize signal timings. Ideal for urban environments, this system integrates with existing infrastructure to reduce congestion and enhance safety.\n\nThe system features:\n- Real-time traffic monitoring with AI analytics\n- Predictive congestion modeling\n- Integration with smart traffic lights\n- Cloud-based data storage for historical analysis\n- Mobile app for traffic updates\n- Customizable alerts for traffic incidents\n\nDesigned for city planners and traffic authorities, this system ensures smoother traffic flow and safer roads.",
     features: [
-      "Night Vision",
-      "Battery Powered",
-      "Long Battery Life",
-      "Motion Detection",
-      "Memory Upgradable",
-      "Long Battery Life",
+      "AI-driven traffic prediction",
+      "Real-time monitoring",
+      "Smart traffic light integration",
+      "Cloud-based analytics",
+      "Mobile app support",
+      "Incident detection and alerts"
     ],
     specifications: {
-      "Video resolution": "2304 * 1296",
-      "Maximum memory supported": "256GB",
-      "PIR start-up time": "0.6 seconds",
-      "1PIR sensing distance": "5-8m",
-      "Dimensions": "16 x 7.5 x 2cm"
-    },
-  },
-
-  {
-    "id": "4",
-    "name": "Pinhole 4G Camera with Night Vision and 60 Day Battery Life",
-    "category": "Surveillance / Security",
-    "imageUrl": "https://www.spygadgets4u.co.uk/user/products/large/HD%20Pinhole%20Wifi%20Camera%20with%20Night%20Vision%20and%20Motion%20Detection%201.jpg",
-    "description": "A discreet mini camera with 4G connectivity and an impressive 60-day battery life, perfect for long-term surveillance.",
-    "fullDescription": "Introducing the ultimate in discreet monitoring: the Pinhole 4G Camera with Night Vision and 60 Day Battery Life. This compact device is designed for convenience and reliability, offering extended surveillance without the need for frequent recharging. With 4G connectivity, you can access live footage from anywhere, anytime, while its night vision ensures clear HD video even in total darkness.\n\nThe system features:\n- High-definition video recording with night vision capabilities\n- Motion detection with instant alerts\n- 4G connectivity for remote access\n- Long-lasting 60-day battery\n- User-friendly app for full control\n\nIdeal for home security, personal monitoring, or covert operations, this camera provides peace of mind with its advanced features and discreet design.",
-    "features": [
-      "60-day battery life",
-      "4G connectivity",
-      "Night vision",
-      "Motion detection",
-      "HD quality video",
-      "App-controlled"
-    ],
-    "specifications": {
-      "Model": "SG-P4G-NV60",
-      "Resolution": "1080P",
-      "Battery Life": "Up to 60 days",
-      "Connectivity": "4G",
-      "Video Compression Format": "H.264",
-      "Night Vision Range": "Up to 10 meters",
-      "Power": "Rechargeable battery",
-      "App Support": "iOS and Android"
+      "Model": "TFA-2025",
+      "Processing Unit": "Quad-Core 2.5GHz",
+      "Data Storage": "1TB SSD",
+      "Connectivity": "5G, Wi-Fi 6",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Camera Compatibility": "1080P or higher"
     }
   },
   {
-    "id": "5",
-    "name": "Mini Spy Camera Recorder with Motion Detection",
-    "category": "Surveillance / Security",
-    "imageUrl": "https://www.spygadgets4u.co.uk/user/products/large/night%20mode%206.PNG",
-    "description": "A small, versatile spy camera with motion detection and night vision, ideal for home or car use.",
-    "fullDescription": "The Mini Spy Camera Recorder with Motion Detection is your go-to solution for discreet surveillance in any environment. Its compact size allows it to be placed anywhere—your home, car, or office—while its motion detection feature ensures it only records when activity is detected, saving battery and storage. With night vision, you’ll capture clear footage day or night.\n\nThe system features:\n- Compact design for versatile placement\n- Motion-activated recording\n- Night vision for 24/7 monitoring\n- Easy-to-use two-button operation\n- HD video quality\n\nPerfect for those needing a simple yet effective recording device, this mini camera blends seamlessly into any setting while delivering reliable performance.",
-    "features": [
-      "Compact size",
-      "Motion detection",
-      "Night vision",
-      "HD video recording",
-      "Two-button operation",
-      "Versatile placement"
+    id: "4",
+    name: "Automated Parking Guidance System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/parking-guidance-system.jpg",
+    description: "A smart solution to guide drivers to available parking spaces, reducing search time and improving parking efficiency.",
+    fullDescription: "The Automated Parking Guidance System uses sensors and digital displays to direct drivers to open parking spots in real-time. Perfect for large car parks, this system minimizes congestion and enhances user experience.\n\nThe system features:\n- Ultrasonic sensors for space detection\n- LED displays for real-time guidance\n- Integration with mobile apps for pre-booking\n- Analytics dashboard for parking trends\n- Energy-efficient design\n- Scalable for multi-level parking structures\n\nIdeal for shopping malls, airports, and office complexes, this system streamlines parking operations.",
+    features: [
+      "Real-time parking availability",
+      "Ultrasonic space detection",
+      "LED guidance displays",
+      "Mobile app integration",
+      "Parking trend analytics",
+      "Energy-efficient sensors"
     ],
-    "specifications": {
-      "Model": "SG-MSCR-MD",
-      "Resolution": "1080P",
-      "Video Format": "AVI",
-      "Video Compression Format": "H.264",
-      "Night Vision": "Yes",
-      "Power": "Rechargeable battery",
-      "Charging Time": "About 2 hours",
-      "Operation": "Video record button, Motion detection button"
+    specifications: {
+      "Model": "APGS-300",
+      "Sensor Type": "Ultrasonic",
+      "Display": "LED, 1920x1080",
+      "Connectivity": "Wi-Fi, Ethernet",
+      "Power": "12V DC",
+      "Operating Range": "0-5m",
+      "Installation": "Ceiling or wall mount"
+    }
+  },
+  {
+    id: "5",
+    name: "Intelligent Traffic Signal Controller",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/traffic-signal-controller.jpg",
+    description: "A smart controller that adapts traffic signals based on real-time vehicle density to reduce wait times.",
+    fullDescription: "The Intelligent Traffic Signal Controller uses AI to dynamically adjust signal timings based on traffic density, weather conditions, and pedestrian activity. It ensures smoother traffic flow and reduces delays.\n\nThe system features:\n- AI-based signal optimization\n- Real-time vehicle detection\n- Pedestrian safety integration\n- Remote management via cloud\n- Emergency vehicle priority mode\n- Energy-efficient operation\n\nPerfect for busy intersections, this system enhances traffic efficiency and safety.",
+    features: [
+      "AI signal optimization",
+      "Real-time vehicle detection",
+      "Pedestrian safety features",
+      "Cloud-based remote management",
+      "Emergency vehicle priority",
+      "Energy-efficient design"
+    ],
+    specifications: {
+      "Model": "ITSC-500",
+      "Processor": "Dual-Core 1.8GHz",
+      "Connectivity": "4G, Ethernet",
+      "Power Supply": "110-240V AC",
+      "Operating Temperature": "-30°C to 70°C",
+      "Signal Compatibility": "LED Traffic Lights",
+      "Mounting": "Pole or cabinet"
+    }
+  },
+  {
+    id: "6",
+    name: "Car Park Payment Kiosk",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/parking-payment-kiosk.jpg",
+    description: "A user-friendly kiosk for seamless parking payments, supporting multiple payment methods.",
+    fullDescription: "The Car Park Payment Kiosk offers a convenient solution for drivers to pay for parking using cash, card, or mobile payments. It integrates with parking management systems for real-time updates.\n\nThe system features:\n- Multi-payment support (cash, card, mobile)\n- Touchscreen interface\n- Integration with parking sensors\n- Receipt printing\n- Weatherproof design\n- Remote monitoring for maintenance\n\nIdeal for public and private car parks, this kiosk simplifies payment processes.",
+    features: [
+      "Multi-payment support",
+      "Touchscreen interface",
+      "Integration with parking systems",
+      "Receipt printing",
+      "Weatherproof design",
+      "Remote monitoring"
+    ],
+    specifications: {
+      "Model": "CPPK-200",
+      "Display": "15-inch touchscreen",
+      "Payment Methods": "Cash, Card, NFC",
+      "Connectivity": "Wi-Fi, 4G",
+      "Power": "220V AC",
+      "Operating Temperature": "-10°C to 50°C",
+      "Material": "Stainless Steel"
+    }
+  },
+  {
+    id: "7",
+    name: "Vehicle Counting System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/vehicle-counting-system.jpg",
+    description: "A system to accurately count vehicles entering and exiting car parks or roads for better traffic management.",
+    fullDescription: "The Vehicle Counting System uses advanced sensors to track vehicle entries and exits, providing real-time data for traffic and parking management. It helps optimize space usage and reduce congestion.\n\nThe system features:\n- High-accuracy vehicle detection\n- Real-time counting and reporting\n- Integration with digital displays\n- Cloud-based data storage\n- Low-light performance\n- Easy installation\n\nSuitable for highways, car parks, and toll booths, this system improves operational efficiency.",
+    features: [
+      "High-accuracy detection",
+      "Real-time counting",
+      "Digital display integration",
+      "Cloud storage",
+      "Low-light performance",
+      "Easy installation"
+    ],
+    specifications: {
+      "Model": "VCS-100",
+      "Sensor Type": "Infrared",
+      "Accuracy": "98%",
+      "Connectivity": "Wi-Fi, Ethernet",
+      "Power": "12V DC",
+      "Operating Range": "0-10m",
+      "Mounting": "Overhead or side"
+    }
+  },
+  {
+    id: "8",
+    name: "Smart Toll Collection System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/toll-collection-system.jpg",
+    description: "An automated system for fast and efficient toll collection using RFID and license plate recognition.",
+    fullDescription: "The Smart Toll Collection System streamlines toll payments with RFID tags and license plate recognition, reducing wait times and improving traffic flow at toll booths.\n\nThe system features:\n- RFID-based vehicle identification\n- License plate recognition\n- Automated payment deduction\n- Real-time transaction logging\n- Anti-fraud detection\n- Cloud-based management\n\nDesigned for highways and bridges, this system ensures efficient toll operations.",
+    features: [
+      "RFID vehicle identification",
+      "License plate recognition",
+      "Automated payments",
+      "Real-time logging",
+      "Anti-fraud detection",
+      "Cloud management"
+    ],
+    specifications: {
+      "Model": "STCS-400",
+      "Reader Type": "RFID, LPR",
+      "Accuracy": "99%",
+      "Connectivity": "5G, Ethernet",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Mounting": "Overhead gantry"
+    }
+  },
+  {
+    id: "9",
+    name: "Parking Space Reservation System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/parking-reservation-system.jpg",
+    description: "A mobile app-integrated system for reserving parking spaces in advance.",
+    fullDescription: "The Parking Space Reservation System allows users to book parking spaces via a mobile app, ensuring hassle-free parking in busy areas. It integrates with parking sensors for real-time availability.\n\nThe system features:\n- Mobile app for reservations\n- Real-time space availability\n- Payment integration\n- QR code entry/exit\n- User notifications\n- Analytics for parking trends\n\nPerfect for urban car parks, this system enhances user convenience.",
+    features: [
+      "Mobile app reservations",
+      "Real-time availability",
+      "Payment integration",
+      "QR code access",
+      "User notifications",
+      "Parking analytics"
+    ],
+    specifications: {
+      "Model": "PSRS-150",
+      "App Compatibility": "iOS, Android",
+      "Connectivity": "Wi-Fi, 4G",
+      "Payment Gateway": "Stripe, PayPal",
+      "Power": "Battery backup",
+      "Operating Temperature": "0°C to 50°C",
+      "Server": "Cloud-based"
+    }
+  },
+  {
+    id: "10",
+    name: "Traffic Incident Detection System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/traffic-incident-system.jpg",
+    description: "A system to detect and report traffic incidents in real-time for faster response.",
+    fullDescription: "The Traffic Incident Detection System uses cameras and AI to identify accidents, roadblocks, and other incidents, alerting authorities for quick response and traffic rerouting.\n\nThe system features:\n- AI-powered incident detection\n- Real-time alerts to authorities\n- Integration with traffic management systems\n- Video recording for evidence\n- Cloud-based analytics\n- Night vision capabilities\n\nIdeal for highways and urban roads, this system enhances safety and response times.",
+    features: [
+      "AI incident detection",
+      "Real-time alerts",
+      "Traffic system integration",
+      "Video recording",
+      "Cloud analytics",
+      "Night vision"
+    ],
+    specifications: {
+      "Model": "TIDS-600",
+      "Camera Resolution": "4K",
+      "AI Processor": "NVIDIA Jetson",
+      "Connectivity": "5G, Wi-Fi",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-30°C to 70°C",
+      "Mounting": "Pole or overhead"
+    }
+  },
+  {
+    id: "11",
+    name: "Dynamic Lane Management System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/lane-management-system.jpg",
+    description: "A system to dynamically adjust lane usage based on traffic conditions.",
+    fullDescription: "The Dynamic Lane Management System uses sensors and digital signage to adjust lane directions and usage based on real-time traffic flow, reducing congestion during peak hours.\n\nThe system features:\n- Real-time lane adjustment\n- Digital signage for driver guidance\n- AI-based traffic analysis\n- Integration with traffic signals\n- Remote management\n- Safety alerts for drivers\n\nSuitable for highways and busy urban roads, this system optimizes lane usage.",
+    features: [
+      "Real-time lane adjustment",
+      "Digital signage",
+      "AI traffic analysis",
+      "Traffic signal integration",
+      "Remote management",
+      "Safety alerts"
+    ],
+    specifications: {
+      "Model": "DLMS-700",
+      "Signage": "LED, 1920x1080",
+      "Sensors": "Infrared, Radar",
+      "Connectivity": "4G, Ethernet",
+      "Power": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Mounting": "Overhead gantry"
+    }
+  },
+  {
+    id: "12",
+    name: "Car Park Barrier System",
+    category: "Traffic Management System / Car Park System",
+    imageUrl: "https://example.com/car-park-barrier.jpg",
+    description: "An automated barrier system for secure and efficient car park access control.",
+    fullDescription: "The Car Park Barrier System provides secure access control for car parks with automated barriers that operate via RFID, license plate recognition, or mobile app authentication.\n\nThe system features:\n- Automated barrier operation\n- RFID and LPR access\n- Mobile app integration\n- Anti-tailgating technology\n- Durable weatherproof design\n- Remote monitoring\n\nIdeal for private and public car parks, this system ensures secure and efficient access.",
+    features: [
+      "Automated barriers",
+      "RFID and LPR access",
+      "Mobile app integration",
+      "Anti-tailgating",
+      "Weatherproof design",
+      "Remote monitoring"
+    ],
+    specifications: {
+      "Model": "CPBS-800",
+      "Barrier Length": "3-6m",
+      "Operation Speed": "1.5s",
+      "Connectivity": "Wi-Fi, Ethernet",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Material": "Aluminum alloy"
     }
   },
 
-  // Software Design
+  // Surveillance
   {
-    id: "Accounting systems",
-    name: "Accounting systems",
-    category: "Software Designing",
-    imageUrl:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Comprehensive data analytics platform designed for intelligence agencies to process and analyze large datasets.",
-    fullDescription: `The Intelligence Analytics Platform is a powerful software solution designed to help intelligence agencies and security organizations transform raw data into actionable insights. By leveraging advanced algorithms and machine learning, the platform can process massive datasets to identify patterns, trends, and potential threats.
-  
-  The platform includes:
-  - Advanced data processing and analytics engine
-  - Natural language processing for text analysis
-  - Image and video content analysis
-  - Link analysis for relationship mapping
-  - Predictive analytics capabilities
-  - Custom reporting and visualization tools
-  
-  Designed with flexibility in mind, the Intelligence Analytics Platform can integrate with existing systems and databases, providing a seamless solution for organizations looking to enhance their intelligence capabilities.`,
+    id: "13",
+    name: "360-Degree Panoramic Surveillance Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/panoramic-camera.jpg",
+    description: "A high-resolution camera offering 360-degree coverage for comprehensive surveillance.",
+    fullDescription: "The 360-Degree Panoramic Surveillance Camera provides complete coverage with a single device, eliminating blind spots. Ideal for large areas like warehouses, parking lots, and public spaces.\n\nThe system features:\n- 360-degree panoramic view\n- 4K ultra-high-definition resolution\n- AI-powered motion detection\n- Night vision up to 50m\n- Secure cloud storage\n- Remote access via mobile app\n\nDesigned for robust surveillance, this camera ensures no detail is missed.",
     features: [
-      "Machine learning algorithms",
-      "Natural language processing",
-      "Pattern recognition",
-      "Predictive analytics",
-      "Interactive visualizations",
-      "Customizable dashboards",
+      "360-degree coverage",
+      "4K resolution",
+      "AI motion detection",
+      "Night vision",
+      "Cloud storage",
+      "Remote access"
     ],
     specifications: {
-      Deployment: "On-premises or secure cloud",
-      Scalability: "Handles petabytes of data",
-      "Supported Data Types": "Structured, unstructured, semi-structured",
-      "API Integration": "REST API, SOAP, custom connectors",
-      "Languages Supported": "Over 50 languages for text analysis",
-      Compliance: "ISO 27001, SOC 2 Type II",
-    },
+      "Model": "PSC-360",
+      "Resolution": "4K",
+      "Field of View": "360°",
+      "IR Distance": "50m",
+      "Video Compression": "H.265",
+      "Power": "12V DC",
+      "Connectivity": "Wi-Fi, Ethernet"
+    }
+  },
+  {
+    id: "14",
+    name: "Thermal Imaging Surveillance Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/thermal-camera.jpg",
+    description: "A thermal camera for detecting heat signatures in complete darkness or adverse weather.",
+    fullDescription: "The Thermal Imaging Surveillance Camera detects heat signatures, making it ideal for surveillance in low-visibility conditions like darkness, fog, or smoke. Perfect for perimeter security.\n\nThe system features:\n- Thermal imaging for heat detection\n- 1080P resolution for visible light\n- AI-based anomaly detection\n- Long-range detection up to 500m\n- Weatherproof design\n- Integration with alarm systems\n\nThis camera ensures reliable surveillance in challenging environments.",
+    features: [
+      "Thermal imaging",
+      "1080P resolution",
+      "AI anomaly detection",
+      "Long-range detection",
+      "Weatherproof design",
+      "Alarm integration"
+    ],
+    specifications: {
+      "Model": "TISC-200",
+      "Resolution": "1080P",
+      "Thermal Range": "500m",
+      "Operating Temperature": "-40°C to 70°C",
+      "Video Compression": "H.264",
+      "Power": "24V DC",
+      "Connectivity": "Ethernet"
+    }
+  },
+  {
+    id: "15",
+    name: "AI-Powered Drone Surveillance System",
+    category: "Surveillance",
+    imageUrl: "https://example.com/drone-surveillance.jpg",
+    description: "A drone-based system for aerial surveillance with AI analytics.",
+    fullDescription: "The AI-Powered Drone Surveillance System provides aerial monitoring with real-time AI analytics for large areas like borders, events, or industrial sites. It autonomously patrols and reports incidents.\n\nThe system features:\n- Autonomous flight with pre-set routes\n- 4K camera with zoom capabilities\n- AI-powered object detection\n- Live streaming to control center\n- Long battery life\n- Weather-resistant design\n\nIdeal for expansive surveillance needs, this system offers unmatched flexibility.",
+    features: [
+      "Autonomous flight",
+      "4K camera with zoom",
+      "AI object detection",
+      "Live streaming",
+      "Long battery life",
+      "Weather-resistant"
+    ],
+    specifications: {
+      "Model": "ADSS-300",
+      "Camera Resolution": "4K",
+      "Flight Time": "45 minutes",
+      "Range": "5km",
+      "Video Compression": "H.265",
+      "Power": "Rechargeable battery",
+      "Connectivity": "5G"
+    }
+  },
+  {
+    id: "16",
+    name: "Smart Motion Detection Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/motion-detection-camera.jpg",
+    description: "A camera with advanced motion detection for real-time alerts and monitoring.",
+    fullDescription: "The Smart Motion Detection Camera uses AI to distinguish between humans, animals, and objects, sending real-time alerts for suspicious activity. Perfect for home or business security.\n\nThe system features:\n- AI-powered motion detection\n- 1080P resolution\n- Two-way audio\n- Night vision up to 30m\n- Mobile app notifications\n- Local and cloud storage\n\nThis camera provides reliable monitoring with minimal false alarms.",
+    features: [
+      "AI motion detection",
+      "1080P resolution",
+      "Two-way audio",
+      "Night vision",
+      "Mobile notifications",
+      "Dual storage options"
+    ],
+    specifications: {
+      "Model": "SMDC-100",
+      "Resolution": "1080P",
+      "IR Distance": "30m",
+      "Audio": "Two-way",
+      "Storage": "128GB local, cloud",
+      "Power": "12V DC",
+      "Connectivity": "Wi-Fi"
+    }
+  },
+  {
+    id: "17",
+    name: "Long-Range PTZ Surveillance Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/ptz-camera.jpg",
+    description: "A pan-tilt-zoom camera for long-range surveillance with precise control.",
+    fullDescription: "The Long-Range PTZ Surveillance Camera offers pan, tilt, and zoom functionality for detailed monitoring over large distances. Ideal for critical infrastructure and public spaces.\n\nThe system features:\n- 360° pan, 90° tilt, 30x optical zoom\n- 4K resolution\n- AI tracking for moving objects\n- Night vision up to 200m\n- Weatherproof design\n- Remote control via app\n\nThis camera ensures comprehensive surveillance with precise control.",
+    features: [
+      "360° pan, 90° tilt",
+      "30x optical zoom",
+      "4K resolution",
+      "AI object tracking",
+      "Night vision",
+      "Weatherproof"
+    ],
+    specifications: {
+      "Model": "LRPTZ-400",
+      "Resolution": "4K",
+      "Zoom": "30x optical",
+      "IR Distance": "200m",
+      "Video Compression": "H.265",
+      "Power": "24V DC",
+      "Connectivity": "Ethernet"
+    }
+  },
+  {
+    id: "18",
+    name: "Hidden Indoor Surveillance Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/hidden-camera.jpg",
+    description: "A discreet camera for covert indoor surveillance.",
+    fullDescription: "The Hidden Indoor Surveillance Camera is designed to blend into any environment, providing covert monitoring for homes, offices, or retail spaces. It captures high-quality video without detection.\n\nThe system features:\n- Discreet design (smoke detector style)\n- 1080P resolution\n- Motion detection with alerts\n- Night vision up to 10m\n- Local storage via SD card\n- Remote access via app\n\nPerfect for discreet surveillance needs, this camera ensures privacy and security.",
+    features: [
+      "Discreet design",
+      "1080P resolution",
+      "Motion detection",
+      "Night vision",
+      "Local storage",
+      "Remote access"
+    ],
+    specifications: {
+      "Model": "HISC-150",
+      "Resolution": "1080P",
+      "IR Distance": "10m",
+      "Storage": "64GB SD card",
+      "Video Compression": "H.264",
+      "Power": "5V DC",
+      "Connectivity": "Wi-Fi"
+    }
+  },
+  {
+    id: "19",
+    name: "Solar-Powered Outdoor Surveillance Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/solar-camera.jpg",
+    description: "A solar-powered camera for remote outdoor surveillance with no wiring required.",
+    fullDescription: "The Solar-Powered Outdoor Surveillance Camera operates on solar energy, making it ideal for remote locations without power access. It provides reliable monitoring with minimal maintenance.\n\nThe system features:\n- Solar-powered with battery backup\n- 1080P resolution\n- Motion detection with alerts\n- Night vision up to 20m\n- Weatherproof design\n- Cloud storage\n\nThis camera is perfect for rural or off-grid surveillance needs.",
+    features: [
+      "Solar-powered",
+      "1080P resolution",
+      "Motion detection",
+      "Night vision",
+      "Weatherproof",
+      "Cloud storage"
+    ],
+    specifications: {
+      "Model": "SPOC-200",
+      "Resolution": "1080P",
+      "IR Distance": "20m",
+      "Battery": "10,000mAh",
+      "Video Compression": "H.264",
+      "Power": "Solar, 5W panel",
+      "Connectivity": "4G"
+    }
+  },
+  {
+    id: "20",
+    name: "AI Facial Recognition Camera",
+    category: "Surveillance",
+    imageUrl: "https://example.com/facial-recognition-camera.jpg",
+    description: "A camera with AI facial recognition for identifying individuals in real-time.",
+    fullDescription: "The AI Facial Recognition Camera uses advanced algorithms to identify and track individuals in real-time, making it ideal for high-security areas like airports, banks, and government facilities.\n\nThe system features:\n- AI facial recognition with 99% accuracy\n- 4K resolution\n- Real-time alerts for recognized faces\n- Night vision up to 30m\n- Secure cloud storage\n- Integration with access control systems\n\nThis camera enhances security with precise identification.",
+    features: [
+      "AI facial recognition",
+      "4K resolution",
+      "Real-time alerts",
+      "Night vision",
+      "Cloud storage",
+      "Access control integration"
+    ],
+    specifications: {
+      "Model": "AFRC-300",
+      "Resolution": "4K",
+      "Recognition Accuracy": "99%",
+      "IR Distance": "30m",
+      "Video Compression": "H.265",
+      "Power": "12V DC",
+      "Connectivity": "Ethernet"
+    }
   },
 
+  // Security
   {
-    id: "Hospitals Systems",
-    name: "Hospitals Systems",
-    category: "Software Designing",
-    imageUrl:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Comprehensive data analytics platform designed for intelligence agencies to process and analyze large datasets.",
-    fullDescription: `The Intelligence Analytics Platform is a powerful software solution designed to help intelligence agencies and security organizations transform raw data into actionable insights. By leveraging advanced algorithms and machine learning, the platform can process massive datasets to identify patterns, trends, and potential threats.
-  
-  The platform includes:
-  - Advanced data processing and analytics engine
-  - Natural language processing for text analysis
-  - Image and video content analysis
-  - Link analysis for relationship mapping
-  - Predictive analytics capabilities
-  - Custom reporting and visualization tools
-  
-  Designed with flexibility in mind, the Intelligence Analytics Platform can integrate with existing systems and databases, providing a seamless solution for organizations looking to enhance their intelligence capabilities.`,
+    id: "21",
+    name: "Biometric Access Control System",
+    category: "Security",
+    imageUrl: "https://example.com/biometric-access.jpg",
+    description: "A secure access control system using fingerprint and facial recognition.",
+    fullDescription: "The Biometric Access Control System ensures secure entry with fingerprint and facial recognition technology, preventing unauthorized access to sensitive areas.\n\nThe system features:\n- Fingerprint and facial recognition\n- High-speed authentication\n- Integration with door locks\n- Audit trail for access logs\n- Anti-spoofing technology\n- Remote management via app\n\nIdeal for offices, data centers, and secure facilities, this system enhances security.",
     features: [
-      "Machine learning algorithms",
-      "Natural language processing",
-      "Pattern recognition",
-      "Predictive analytics",
-      "Interactive visualizations",
-      "Customizable dashboards",
+      "Fingerprint recognition",
+      "Facial recognition",
+      "High-speed authentication",
+      "Access log tracking",
+      "Anti-spoofing",
+      "Remote management"
     ],
     specifications: {
-      Deployment: "On-premises or secure cloud",
-      Scalability: "Handles petabytes of data",
-      "Supported Data Types": "Structured, unstructured, semi-structured",
-      "API Integration": "REST API, SOAP, custom connectors",
-      "Languages Supported": "Over 50 languages for text analysis",
-      Compliance: "ISO 27001, SOC 2 Type II",
-    },
+      "Model": "BACS-500",
+      "Recognition Speed": "<1s",
+      "User Capacity": "10,000",
+      "Connectivity": "Wi-Fi, Ethernet",
+      "Power Supply": "12V DC",
+      "Operating Temperature": "0°C to 50°C",
+      "Mounting": "Wall mount"
+    }
+  },
+  {
+    id: "22",
+    name: "Smart Alarm System",
+    category: "Security",
+    imageUrl: "https://example.com/smart-alarm.jpg",
+    description: "A comprehensive alarm system with sensors for intrusion detection.",
+    fullDescription: "The Smart Alarm System protects properties with a network of sensors for doors, windows, and motion detection, sending instant alerts to users and authorities.\n\nThe system features:\n- Door/window sensors\n- Motion detection\n- Siren with 120dB output\n- Mobile app alerts\n- Integration with surveillance cameras\n- Battery backup\n\nPerfect for homes and businesses, this system ensures round-the-clock security.",
+    features: [
+      "Door/window sensors",
+      "Motion detection",
+      "Loud siren",
+      "Mobile alerts",
+      "Camera integration",
+      "Battery backup"
+    ],
+    specifications: {
+      "Model": "SAS-200",
+      "Siren Output": "120dB",
+      "Sensor Range": "10m",
+      "Connectivity": "Wi-Fi, 4G",
+      "Power": "220V AC, battery backup",
+      "Operating Temperature": "-10°C to 50°C",
+      "Installation": "DIY or professional"
+    }
+  },
+  {
+    id: "23",
+    name: "Perimeter Intrusion Detection System",
+    category: "Security",
+    imageUrl: "https://example.com/perimeter-detection.jpg",
+    description: "A system to detect and alert on unauthorized perimeter breaches.",
+    fullDescription: "The Perimeter Intrusion Detection System uses infrared and microwave sensors to detect unauthorized entry along a perimeter, ideal for securing large properties.\n\nThe system features:\n- Infrared and microwave detection\n- Real-time alerts\n- Integration with surveillance cameras\n- Weatherproof sensors\n- Long-range detection up to 100m\n- Remote monitoring\n\nThis system is perfect for industrial sites, military bases, and estates.",
+    features: [
+      "Infrared detection",
+      "Microwave detection",
+      "Real-time alerts",
+      "Camera integration",
+      "Weatherproof",
+      "Long-range detection"
+    ],
+    specifications: {
+      "Model": "PIDS-300",
+      "Detection Range": "100m",
+      "Sensor Type": "Infrared, Microwave",
+      "Connectivity": "Ethernet",
+      "Power Supply": "24V DC",
+      "Operating Temperature": "-30°C to 70°C",
+      "Mounting": "Fence or ground"
+    }
+  },
+  {
+    id: "24",
+    name: "Smart Door Lock System",
+    category: "Security",
+    imageUrl: "https://example.com/smart-door-lock.jpg",
+    description: "A keyless door lock system with multiple access methods.",
+    fullDescription: "The Smart Door Lock System offers keyless entry with fingerprint, PIN, and mobile app access, providing convenience and enhanced security for homes and offices.\n\nThe system features:\n- Fingerprint and PIN access\n- Mobile app control\n- Anti-tamper alarm\n- Low battery alerts\n- Temporary access codes\n- Durable design\n\nThis lock system ensures secure and convenient access control.",
+    features: [
+      "Fingerprint access",
+      "PIN access",
+      "Mobile app control",
+      "Anti-tamper alarm",
+      "Temporary codes",
+      "Durable design"
+    ],
+    specifications: {
+      "Model": "SDLS-400",
+      "Unlock Methods": "Fingerprint, PIN, App",
+      "User Capacity": "100",
+      "Battery": "4x AA",
+      "Operating Temperature": "-20°C to 60°C",
+      "Material": "Stainless Steel",
+      "Connectivity": "Bluetooth"
+    }
+  },
+  {
+    id: "25",
+    name: "Portable Security Scanner",
+    category: "Security",
+    imageUrl: "https://example.com/security-scanner.jpg",
+    description: "A handheld scanner for detecting metal and contraband items.",
+    fullDescription: "The Portable Security Scanner is a lightweight device for detecting metal objects and contraband, ideal for event security, schools, and public venues.\n\nThe system features:\n- High-sensitivity metal detection\n- Audio and vibration alerts\n- Lightweight and ergonomic design\n- Rechargeable battery\n- Adjustable sensitivity\n- LED indicators\n\nThis scanner ensures quick and effective security checks.",
+    features: [
+      "High-sensitivity detection",
+      "Audio/vibration alerts",
+      "Lightweight design",
+      "Rechargeable battery",
+      "Adjustable sensitivity",
+      "LED indicators"
+    ],
+    specifications: {
+      "Model": "PSS-100",
+      "Detection Range": "5cm",
+      "Battery Life": "8 hours",
+      "Weight": "300g",
+      "Power": "Rechargeable battery",
+      "Operating Temperature": "0°C to 50°C",
+      "Material": "ABS Plastic"
+    }
+  },
+  {
+    id: "26",
+    name: "Anti-Drone Security System",
+    category: "Security",
+    imageUrl: "https://example.com/anti-drone-system.jpg",
+    description: "A system to detect and neutralize unauthorized drones.",
+    fullDescription: "The Anti-Drone Security System detects and neutralizes unauthorized drones using RF jamming and laser technology, protecting sensitive areas from aerial threats.\n\nThe system features:\n- Drone detection up to 2km\n- RF jamming for neutralization\n- Laser-based drone disabling\n- Real-time alerts\n- Integration with surveillance\n- Weatherproof design\n\nIdeal for airports, prisons, and military bases, this system ensures aerial security.",
+    features: [
+      "Drone detection",
+      "RF jamming",
+      "Laser disabling",
+      "Real-time alerts",
+      "Surveillance integration",
+      "Weatherproof"
+    ],
+    specifications: {
+      "Model": "ADSS-500",
+      "Detection Range": "2km",
+      "Jamming Range": "1km",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Mounting": "Fixed or mobile",
+      "Connectivity": "Ethernet"
+    }
+  },
+  {
+    id: "27",
+    name: "Smart Safe with Biometric Lock",
+    category: "Security",
+    imageUrl: "https://example.com/smart-safe.jpg",
+    description: "A secure safe with biometric locking for valuables.",
+    fullDescription: "The Smart Safe with Biometric Lock uses fingerprint recognition to secure valuables, offering a high level of protection for homes, offices, or retail environments.\n\nThe system features:\n- Fingerprint biometric lock\n- Tamper-proof design\n- Internal LED lighting\n- Mobile app for access logs\n- Emergency override key\n- Fire-resistant material\n\nThis safe ensures the security of your most valuable items.",
+    features: [
+      "Fingerprint lock",
+      "Tamper-proof",
+      "Internal lighting",
+      "Access log via app",
+      "Emergency key",
+      "Fire-resistant"
+    ],
+    specifications: {
+      "Model": "SSBL-200",
+      "Capacity": "50L",
+      "Weight": "30kg",
+      "Lock Type": "Biometric",
+      "Battery": "4x AA",
+      "Material": "Steel",
+      "Fire Rating": "30 minutes"
+    }
+  },
+  {
+    id: "28",
+    name: "Explosion-Proof Security Camera",
+    category: "Security",
+    imageUrl: "https://example.com/explosion-proof-camera.jpg",
+    description: "A camera designed for hazardous environments with explosion-proof housing.",
+    fullDescription: "The Explosion-Proof Security Camera is built for use in hazardous environments like oil rigs, chemical plants, and mines, with a robust housing that withstands explosions and extreme conditions.\n\nThe system features:\n- Explosion-proof housing\n- 1080P resolution\n- Night vision up to 50m\n- Corrosion-resistant material\n- Remote monitoring\n- Integration with alarm systems\n\nThis camera ensures safety and security in high-risk areas.",
+    features: [
+      "Explosion-proof",
+      "1080P resolution",
+      "Night vision",
+      "Corrosion-resistant",
+      "Remote monitoring",
+      "Alarm integration"
+    ],
+    specifications: {
+      "Model": "EPSC-300",
+      "Resolution": "1080P",
+      "IR Distance": "50m",
+      "Housing": "Stainless Steel",
+      "Video Compression": "H.264",
+      "Power": "24V DC",
+      "Operating Temperature": "-40°C to 80°C"
+    }
   },
 
+  // Forensic Systems
   {
-    id: "secure-communication-system",
-    name: "Secure Communication System",
-    category: "Communications",
-    imageUrl:
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "End-to-end encrypted communication system for secure voice, video, and data transmission in sensitive operations.",
-    fullDescription: `Our Secure Communication System provides a comprehensive solution for organizations requiring the highest level of security for their communications. With end-to-end encryption and secure hardware, it ensures that sensitive information remains protected from interception and eavesdropping.
-  
-  The system features:
-  - End-to-end encryption for all communication channels
-  - Secure voice, video, and text messaging
-  - Dedicated hardware terminals for maximum security
-  - Anti-jamming technology
-  - Self-destructing messages capability
-  - Zero-knowledge architecture
-  
-  Deployed by government agencies and multinational corporations, our Secure Communication System provides peace of mind for organizations handling sensitive information and operating in high-risk environments.`,
+    id: "29",
+    name: "Digital Evidence Management System",
+    category: "Forensic Systems",
+    imageUrl: "https://example.com/digital-evidence-system.jpg",
+    description: "A system for securely storing and managing digital forensic evidence.",
+    fullDescription: "The Digital Evidence Management System provides a secure platform for storing, organizing, and analyzing digital evidence, ensuring chain of custody for legal proceedings.\n\nThe system features:\n- Secure cloud storage\n- Chain of custody tracking\n- Metadata analysis\n- Access control with audit logs\n- Integration with forensic tools\n- User-friendly interface\n\nIdeal for law enforcement and legal teams, this system streamlines evidence management.",
     features: [
-      "End-to-end encryption",
-      "Secure voice and video calls",
-      "Anti-jamming technology",
-      "Self-destructing messages",
-      "Dedicated secure terminals",
-      "Offline communication capabilities",
+      "Secure storage",
+      "Chain of custody",
+      "Metadata analysis",
+      "Access control",
+      "Forensic tool integration",
+      "User-friendly"
     ],
     specifications: {
-      Encryption: "Quantum-resistant algorithms",
-      "Call Quality": "HD voice, 4K video",
-      "Network Requirements": "Minimum 256kbps connection",
-      "Physical Security": "Tamper-evident seals, secure element",
-      "Battery Life": "Up to 12 hours continuous use",
-      Certifications: "NATO restricted level, FIPS 140-2",
-    },
+      "Model": "DEMS-100",
+      "Storage": "10TB",
+      "Encryption": "AES-256",
+      "Connectivity": "Ethernet",
+      "User Capacity": "Unlimited",
+      "Operating System": "Windows/Linux",
+      "Access": "Role-based"
+    }
   },
   {
-    id: "digital-forensics-toolkit",
-    name: "Digital Forensics Toolkit",
-    category: "Forensics",
-    imageUrl:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Comprehensive suite of tools for digital evidence collection, analysis, and presentation in legal proceedings.",
-    fullDescription: `The Digital Forensics Toolkit provides law enforcement and security professionals with a complete set of tools for the collection, preservation, and analysis of digital evidence. From data recovery to detailed analysis, the toolkit enables investigators to build comprehensive cases based on digital information.
-  
-  The toolkit includes:
-  - Write-blockers for forensically sound data acquisition
-  - Advanced data recovery software for damaged or deleted files
-  - Memory analysis tools for volatile data capture
-  - Mobile device forensics capabilities
-  - Timeline analysis and visualization
-  - Court-ready reporting tools
-  
-  Each tool in the kit is designed to maintain the chain of custody and ensure that all evidence collected is admissible in court, making it an essential resource for modern investigative work.`,
+    id: "30",
+    name: "Portable DNA Analyzer",
+    category: "Forensic Systems",
+    imageUrl: "https://example.com/dna-analyzer.jpg",
+    description: "A compact device for rapid DNA analysis at crime scenes.",
+    fullDescription: "The Portable DNA Analyzer allows forensic teams to perform rapid DNA analysis on-site, providing quick results for suspect identification and evidence matching.\n\nThe system features:\n- Rapid DNA profiling\n- Compact and portable design\n- High accuracy results\n- Integration with DNA databases\n- User-friendly interface\n- Battery-powered operation\n\nThis analyzer speeds up forensic investigations in the field.",
     features: [
-      "Forensically sound data acquisition",
-      "Advanced data recovery",
-      "Memory forensics capabilities",
-      "Mobile device analysis",
-      "Timeline reconstruction",
-      "Court-admissible reporting",
+      "Rapid DNA profiling",
+      "Portable design",
+      "High accuracy",
+      "Database integration",
+      "User-friendly",
+      "Battery-powered"
     ],
     specifications: {
-      "Compatible Systems": "Windows, macOS, Linux, iOS, Android",
-      "Write Blockers": "USB 3.0, SATA, IDE, SAS, FireWire",
-      "Analysis Speed": "Up to 15GB/min depending on hardware",
-      "Hash Verification": "MD5, SHA-1, SHA-256",
-      "Case Management": "Integrated system with chain of custody",
-      "Training Required": "Certified training available",
-    },
+      "Model": "PDNA-200",
+      "Analysis Time": "90 minutes",
+      "Accuracy": "99.9%",
+      "Battery Life": "6 hours",
+      "Weight": "2kg",
+      "Connectivity": "Wi-Fi",
+      "Sample Capacity": "1 sample"
+    }
   },
   {
-    id: "tactical-command-center",
-    name: "Tactical Command Center",
-    category: "Command & Control",
-    imageUrl:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Mobile command and control center for field operations with real-time situational awareness and secure communications.",
-    fullDescription: `The Tactical Command Center is a mobile solution that provides field commanders with comprehensive situational awareness and communication capabilities. Designed for rapid deployment in emergency situations, it serves as a central hub for coordinating operations and managing resources effectively.
-  
-  The command center features:
-  - Ruggedized, transportable hardware system
-  - Integrated communications suite with multi-channel support
-  - Real-time mapping and location tracking
-  - Video feeds from multiple sources including drones and body cameras
-  - Secure data transmission and storage
-  - Power management system for extended operations
-  
-  Whether responding to natural disasters, security incidents, or planned operations, the Tactical Command Center provides the tools needed to maintain control and coordination in challenging environments.`,
+    id: "31",
+    name: "Forensic Video Analysis Software",
+    category: "Forensic Systems",
+    imageUrl: "https://example.com/video-analysis-software.jpg",
+    description: "Software for enhancing and analyzing video evidence.",
+    fullDescription: "The Forensic Video Analysis Software provides tools to enhance, stabilize, and analyze video footage, helping investigators extract critical details from surveillance or body cam videos.\n\nThe system features:\n- Video enhancement and stabilization\n- Frame-by-frame analysis\n- Object and facial recognition\n- Timestamp verification\n- Exportable reports\n- Integration with evidence systems\n\nThis software is essential for forensic video investigations.",
     features: [
-      "Mobile deployment capability",
-      "Multi-channel communications",
-      "Real-time situational mapping",
-      "Video feed integration",
-      "Resource tracking and management",
-      "Extended operation capability",
+      "Video enhancement",
+      "Frame-by-frame analysis",
+      "Object recognition",
+      "Timestamp verification",
+      "Exportable reports",
+      "Evidence integration"
     ],
     specifications: {
-      "Deployment Time": "Under 15 minutes by trained personnel",
-      "Communication Range": "Up to 50km direct, unlimited with satellite",
-      "Power Supply": "Internal battery (8 hours), generator, vehicle",
-      "Display Systems": "Multiple touchscreens, data wall capability",
-      "Environmental Rating": "IP65, MIL-STD-810G",
-      Transport: "Vehicle-mounted, air-droppable cases",
-    },
+      "Model": "FVAS-300",
+      "Supported Formats": "MP4, AVI, MOV",
+      "Resolution Support": "Up to 4K",
+      "Operating System": "Windows 10/11",
+      "Processor": "Intel i7 or higher",
+      "RAM": "16GB",
+      "Storage": "1TB SSD"
+    }
+  },
+  {
+    id: "32",
+    name: "Fingerprint Analysis System",
+    category: "Forensic Systems",
+    imageUrl: "https://example.com/fingerprint-system.jpg",
+    description: "A system for capturing and analyzing fingerprints with high accuracy.",
+    fullDescription: "The Fingerprint Analysis System captures high-resolution fingerprints and compares them against databases for identification, aiding in criminal investigations.\n\nThe system features:\n- High-resolution fingerprint scanning\n- Automated matching with databases\n- Latent print analysis\n- User-friendly interface\n- Secure data storage\n- Integration with forensic labs\n\nThis system is crucial for forensic identification processes.",
+    features: [
+      "High-resolution scanning",
+      "Automated matching",
+      "Latent print analysis",
+      "User-friendly",
+      "Secure storage",
+      "Lab integration"
+    ],
+    specifications: {
+      "Model": "FAS-400",
+      "Resolution": "1000 dpi",
+      "Scan Area": "2x2 inches",
+      "Matching Speed": "<1s",
+      "Connectivity": "USB, Ethernet",
+      "Operating System": "Windows",
+      "Storage": "500GB"
+    }
+  },
+  {
+    id: "33",
+    name: "Forensic Audio Enhancement Tool",
+    category: "Forensic Systems",
+    imageUrl: "https://example.com/audio-enhancement-tool.jpg",
+    description: "A tool for enhancing and analyzing audio evidence.",
+    fullDescription: "The Forensic Audio Enhancement Tool cleans and enhances audio recordings, helping investigators identify voices, background noises, and other critical details.\n\nThe system features:\n- Noise reduction and audio enhancement\n- Voice identification\n- Frequency analysis\n- Timestamp verification\n- Exportable reports\n- Integration with evidence systems\n\nThis tool is vital for audio-based forensic investigations.",
+    features: [
+      "Noise reduction",
+      "Voice identification",
+      "Frequency analysis",
+      "Timestamp verification",
+      "Exportable reports",
+      "Evidence integration"
+    ],
+    specifications: {
+      "Model": "FAET-500",
+      "Supported Formats": "WAV, MP3",
+      "Frequency Range": "20Hz-20kHz",
+      "Operating System": "Windows 10/11",
+      "Processor": "Intel i5 or higher",
+      "RAM": "8GB",
+      "Storage": "500GB SSD"
+    }
   },
 
+  // Entry Systems
+  {
+    id: "34",
+    name: "RFID Gate Entry System",
+    category: "Entry Systems",
+    imageUrl: "https://example.com/rfid-gate.jpg",
+    description: "An RFID-based system for secure gate entry.",
+    fullDescription: "The RFID Gate Entry System allows authorized vehicles or personnel to enter through gates using RFID cards or tags, ensuring secure and efficient access control.\n\nThe system features:\n- RFID-based access\n- Fast gate operation\n- Anti-tailgating technology\n- Integration with surveillance\n- Weatherproof design\n- Remote management\n\nIdeal for residential complexes, offices, and industrial sites.",
+    features: [
+      "RFID access",
+      "Fast operation",
+      "Anti-tailgating",
+      "Surveillance integration",
+      "Weatherproof",
+      "Remote management"
+    ],
+    specifications: {
+      "Model": "RGES-100",
+      "Reader Range": "5m",
+      "Gate Speed": "2s",
+      "Connectivity": "Ethernet",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Material": "Steel"
+    }
+  },
+  {
+    id: "35",
+    name: "Facial Recognition Turnstile",
+    category: "Entry Systems",
+    imageUrl: "https://example.com/facial-turnstile.jpg",
+    description: "A turnstile with facial recognition for secure pedestrian entry.",
+    fullDescription: "The Facial Recognition Turnstile uses advanced facial recognition to grant access to authorized individuals, ideal for high-security areas like offices and stadiums.\n\nThe system features:\n- Facial recognition with 99% accuracy\n- Fast throughput\n- Anti-tailgating technology\n- Integration with access control\n- Durable design\n- User-friendly interface\n\nThis turnstile ensures secure and efficient pedestrian access.",
+    features: [
+      "Facial recognition",
+      "Fast throughput",
+      "Anti-tailgating",
+      "Access control integration",
+      "Durable design",
+      "User-friendly"
+    ],
+    specifications: {
+      "Model": "FRT-200",
+      "Recognition Speed": "<1s",
+      "Throughput": "30 persons/min",
+      "Connectivity": "Ethernet",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "0°C to 50°C",
+      "Material": "Stainless Steel"
+    }
+  },
+  {
+    id: "36",
+    name: "Smart Intercom Entry System",
+    category: "Entry Systems",
+    imageUrl: "https://example.com/smart-intercom.jpg",
+    description: "A video intercom system for secure visitor entry.",
+    fullDescription: "The Smart Intercom Entry System allows residents or staff to verify and grant access to visitors via video and audio communication, enhancing security at entry points.\n\nThe system features:\n- HD video and two-way audio\n- Mobile app integration\n- Remote door unlock\n- Night vision camera\n- Weatherproof design\n- Access log tracking\n\nPerfect for apartments, offices, and gated communities.",
+    features: [
+      "HD video",
+      "Two-way audio",
+      "Mobile app integration",
+      "Remote unlock",
+      "Night vision",
+      "Weatherproof"
+    ],
+    specifications: {
+      "Model": "SIES-300",
+      "Camera Resolution": "1080P",
+      "Audio": "Two-way",
+      "Connectivity": "Wi-Fi",
+      "Power Supply": "12V DC",
+      "Operating Temperature": "-20°C to 50°C",
+      "Mounting": "Wall mount"
+    }
+  },
+  {
+    id: "37",
+    name: "Keycard Entry System",
+    category: "Entry Systems",
+    imageUrl: "https://example.com/keycard-system.jpg",
+    description: "A keycard-based system for secure door access.",
+    fullDescription: "The Keycard Entry System uses RFID keycards to grant access to authorized personnel, providing a simple and secure solution for door entry in offices and hotels.\n\nThe system features:\n- RFID keycard access\n- Fast authentication\n- Access log tracking\n- Integration with security systems\n- Easy card management\n- Durable reader design\n\nThis system ensures secure and efficient access control.",
+    features: [
+      "RFID keycard access",
+      "Fast authentication",
+      "Access log tracking",
+      "Security integration",
+      "Easy management",
+      "Durable design"
+    ],
+    specifications: {
+      "Model": "KES-400",
+      "Reader Range": "5cm",
+      "User Capacity": "5,000",
+      "Connectivity": "Ethernet",
+      "Power Supply": "12V DC",
+      "Operating Temperature": "0°C to 50°C",
+      "Mounting": "Wall mount"
+    }
+  },
+  {
+    id: "38",
+    name: "Vehicle License Plate Entry System",
+    category: "Entry Systems",
+    imageUrl: "https://example.com/license-plate-entry.jpg",
+    description: "A system for vehicle entry using license plate recognition.",
+    fullDescription: "The Vehicle License Plate Entry System uses LPR technology to automatically grant access to authorized vehicles, ideal for secure parking lots and gated communities.\n\nThe system features:\n- License plate recognition\n- Fast gate operation\n- Integration with barriers\n- Access log tracking\n- Night vision camera\n- Weatherproof design\n\nThis system ensures secure and efficient vehicle access.",
+    features: [
+      "License plate recognition",
+      "Fast gate operation",
+      "Barrier integration",
+      "Access log tracking",
+      "Night vision",
+      "Weatherproof"
+    ],
+    specifications: {
+      "Model": "VLPES-500",
+      "Camera Resolution": "1080P",
+      "Recognition Speed": "<1s",
+      "Connectivity": "Ethernet",
+      "Power Supply": "220V AC",
+      "Operating Temperature": "-20°C to 60°C",
+      "Mounting": "Pole mount"
+    }
+  },
 
-  // Traffic Management System & Entry Systems
+  // Communication
   {
-    id: "Speed Cameras",
-    name: "Speed Cameras",
-    category: "Traffic Management System & Entry Systems",
-    imageUrl:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Mobile command and control center for field operations with real-time situational awareness and secure communications.",
-    fullDescription: `The Tactical Command Center is a mobile solution that provides field commanders with comprehensive situational awareness and communication capabilities. Designed for rapid deployment in emergency situations, it serves as a central hub for coordinating operations and managing resources effectively.
-  
-  The command center features:
-  - Ruggedized, transportable hardware system
-  - Integrated communications suite with multi-channel support
-  - Real-time mapping and location tracking
-  - Video feeds from multiple sources including drones and body cameras
-  - Secure data transmission and storage
-  - Power management system for extended operations
-  
-  Whether responding to natural disasters, security incidents, or planned operations, the Tactical Command Center provides the tools needed to maintain control and coordination in challenging environments.`,
+    id: "39",
+    name: "Secure Radio Communication System",
+    category: "Communication",
+    imageUrl: "https://example.com/radio-communication.jpg",
+    description: "A secure radio system for encrypted communication.",
+    fullDescription: "The Secure Radio Communication System provides encrypted voice communication for teams in security, law enforcement, or emergency response, ensuring privacy and reliability.\n\nThe system features:\n- AES-256 encryption\n- Long-range communication\n- Clear audio quality\n- Rugged design\n- Group and private channels\n- Battery life up to 12 hours\n\nThis system ensures secure and reliable communication in critical situations.",
     features: [
-      "Mobile deployment capability",
-      "Multi-channel communications",
-      "Real-time situational mapping",
-      "Video feed integration",
-      "Resource tracking and management",
-      "Extended operation capability",
+      "AES-256 encryption",
+      "Long-range",
+      "Clear audio",
+      "Rugged design",
+      "Group channels",
+      "Long battery life"
     ],
     specifications: {
-      "Deployment Time": "Under 15 minutes by trained personnel",
-      "Communication Range": "Up to 50km direct, unlimited with satellite",
-      "Power Supply": "Internal battery (8 hours), generator, vehicle",
-      "Display Systems": "Multiple touchscreens, data wall capability",
-      "Environmental Rating": "IP65, MIL-STD-810G",
-      Transport: "Vehicle-mounted, air-droppable cases",
-    },
+      "Model": "SRCS-100",
+      "Range": "10km",
+      "Encryption": "AES-256",
+      "Battery Life": "12 hours",
+      "Weight": "500g",
+      "Operating Temperature": "-20°C to 60°C",
+      "Channels": "16"
+    }
   },
   {
-    id: "ANPR Systems",
-    name: "ANPR Systems",
-    category: "Traffic Management System & Entry Systems",
-    imageUrl:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Mobile command and control center for field operations with real-time situational awareness and secure communications.",
-    fullDescription: `The Tactical Command Center is a mobile solution that provides field commanders with comprehensive situational awareness and communication capabilities. Designed for rapid deployment in emergency situations, it serves as a central hub for coordinating operations and managing resources effectively.
-  
-  The command center features:
-  - Ruggedized, transportable hardware system
-  - Integrated communications suite with multi-channel support
-  - Real-time mapping and location tracking
-  - Video feeds from multiple sources including drones and body cameras
-  - Secure data transmission and storage
-  - Power management system for extended operations
-  
-  Whether responding to natural disasters, security incidents, or planned operations, the Tactical Command Center provides the tools needed to maintain control and coordination in challenging environments.`,
+    id: "40",
+    name: "Video Conferencing System for Control Rooms",
+    category: "Communication",
+    imageUrl: "https://example.com/video-conferencing.jpg",
+    description: "A high-definition video conferencing system for control room communication.",
+    fullDescription: "The Video Conferencing System for Control Rooms enables seamless communication between teams with high-definition video and audio, ideal for coordinating operations.\n\nThe system features:\n- 4K video resolution\n- Noise-canceling audio\n- Multi-user conferencing\n- Screen sharing\n- Secure encryption\n- Integration with control systems\n\nThis system enhances collaboration in control room environments.",
     features: [
-      "Mobile deployment capability",
-      "Multi-channel communications",
-      "Real-time situational mapping",
-      "Video feed integration",
-      "Resource tracking and management",
-      "Extended operation capability",
+      "4K video",
+      "Noise-canceling audio",
+      "Multi-user support",
+      "Screen sharing",
+      "Secure encryption",
+      "Control system integration"
     ],
     specifications: {
-      "Deployment Time": "Under 15 minutes by trained personnel",
-      "Communication Range": "Up to 50km direct, unlimited with satellite",
-      "Power Supply": "Internal battery (8 hours), generator, vehicle",
-      "Display Systems": "Multiple touchscreens, data wall capability",
-      "Environmental Rating": "IP65, MIL-STD-810G",
-      Transport: "Vehicle-mounted, air-droppable cases",
-    },
+      "Model": "VCS-200",
+      "Video Resolution": "4K",
+      "Audio": "Noise-canceling",
+      "Connectivity": "Ethernet, Wi-Fi",
+      "Power Supply": "220V AC",
+      "Operating System": "Windows/Linux",
+      "User Capacity": "50"
+    }
   },
   {
-    id: "ANPR Systems",
-    name: "ANPR Systems",
-    category: "Traffic Management System & Entry Systems",
-    imageUrl:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Mobile command and control center for field operations with real-time situational awareness and secure communications.",
-    fullDescription: `The Tactical Command Center is a mobile solution that provides field commanders with comprehensive situational awareness and communication capabilities. Designed for rapid deployment in emergency situations, it serves as a central hub for coordinating operations and managing resources effectively.
-  
-  The command center features:
-  - Ruggedized, transportable hardware system
-  - Integrated communications suite with multi-channel support
-  - Real-time mapping and location tracking
-  - Video feeds from multiple sources including drones and body cameras
-  - Secure data transmission and storage
-  - Power management system for extended operations
-  
-  Whether responding to natural disasters, security incidents, or planned operations, the Tactical Command Center provides the tools needed to maintain control and coordination in challenging environments.`,
+    id: "41",
+    name: "Emergency Communication Beacon",
+    category: "Communication",
+    imageUrl: "https://example.com/emergency-beacon.jpg",
+    description: "A portable beacon for emergency communication in remote areas.",
+    fullDescription: "The Emergency Communication Beacon allows users to send distress signals and communicate in remote areas with no cellular coverage, ideal for search and rescue operations.\n\nThe system features:\n- Satellite-based communication\n- SOS distress signal\n- Two-way messaging\n- GPS location tracking\n- Rugged and waterproof design\n- Long battery life\n\nThis beacon ensures safety in remote environments.",
     features: [
-      "Mobile deployment capability",
-      "Multi-channel communications",
-      "Real-time situational mapping",
-      "Video feed integration",
-      "Resource tracking and management",
-      "Extended operation capability",
+      "Satellite communication",
+      "SOS signal",
+      "Two-way messaging",
+      "GPS tracking",
+      "Rugged design",
+      "Long battery life"
     ],
     specifications: {
-      "Deployment Time": "Under 15 minutes by trained personnel",
-      "Communication Range": "Up to 50km direct, unlimited with satellite",
-      "Power Supply": "Internal battery (8 hours), generator, vehicle",
-      "Display Systems": "Multiple touchscreens, data wall capability",
-      "Environmental Rating": "IP65, MIL-STD-810G",
-      Transport: "Vehicle-mounted, air-droppable cases",
-    },
+      "Model": "ECB-300",
+      "Range": "Global",
+      "Battery Life": "24 hours",
+      "Weight": "200g",
+      "Connectivity": "Satellite",
+      "Operating Temperature": "-30°C to 70°C",
+      "Waterproof Rating": "IP67"
+    }
   },
+
+  // Command Centres / Control Rooms
   {
-    id: "Breathalyser System",
-    name: "Breathalyser System",
-    category: "Traffic Management System & Entry Systems",
-    imageUrl:
-      "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=2000&h=1200",
-    description:
-      "Mobile command and control center for field operations with real-time situational awareness and secure communications.",
-    fullDescription: `The Tactical Command Center is a mobile solution that provides field commanders with comprehensive situational awareness and communication capabilities. Designed for rapid deployment in emergency situations, it serves as a central hub for coordinating operations and managing resources effectively.
-  
-  The command center features:
-  - Ruggedized, transportable hardware system
-  - Integrated communications suite with multi-channel support
-  - Real-time mapping and location tracking
-  - Video feeds from multiple sources including drones and body cameras
-  - Secure data transmission and storage
-  - Power management system for extended operations
-  
-  Whether responding to natural disasters, security incidents, or planned operations, the Tactical Command Center provides the tools needed to maintain control and coordination in challenging environments.`,
+    id: "42",
+    name: "Integrated Control Room Management System",
+    category: "Command Centres / Control Rooms",
+    imageUrl: "https://example.com/control-room-system.jpg",
+    description: "A comprehensive system for managing control room operations.",
+    fullDescription: "The Integrated Control Room Management System centralizes monitoring and control of surveillance, communication, and security systems, providing a unified interface for operators.\n\nThe system features:\n- Centralized monitoring dashboard\n- Real-time video feeds\n- Incident management tools\n- Integration with surveillance and security\n- Customizable operator interface\n- Secure data encryption\n\nIdeal for command centers in law enforcement, traffic management, or critical infrastructure.",
     features: [
-      "Mobile deployment capability",
-      "Multi-channel communications",
-      "Real-time situational mapping",
-      "Video feed integration",
-      "Resource tracking and management",
-      "Extended operation capability",
+      "Centralized dashboard",
+      "Real-time video",
+      "Incident management",
+      "System integration",
+      "Customizable interface",
+      "Secure encryption"
     ],
     specifications: {
-      "Deployment Time": "Under 15 minutes by trained personnel",
-      "Communication Range": "Up to 50km direct, unlimited with satellite",
-      "Power Supply": "Internal battery (8 hours), generator, vehicle",
-      "Display Systems": "Multiple touchscreens, data wall capability",
-      "Environmental Rating": "IP65, MIL-STD-810G",
-      Transport: "Vehicle-mounted, air-droppable cases",
-    },
-  },
-];
+      "Model": "ICRMS-100",
+      "Display Support": "Up to 8 monitors",
+      "Processor": "Intel Xeon",
+      "Storage": "2TB SSD",
+      "Connectivity": "Ethernet, 5G",
+      "Operating System": "Windows/Linux",
+      "Encryption": "AES-256"
+    }
+  }
+]

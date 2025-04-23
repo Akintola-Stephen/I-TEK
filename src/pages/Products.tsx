@@ -12,6 +12,7 @@ const ProductsPage = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+
   const categories = [
     "All",
     ...Array.from(new Set(products.map((product) => product.category))),
@@ -22,6 +23,8 @@ const ProductsPage = () => {
       ? products
       : products.filter((product) => product.category === selectedCategory);
 
+      console.log(filteredProducts);
+      
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
