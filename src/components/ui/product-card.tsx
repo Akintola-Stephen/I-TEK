@@ -51,16 +51,29 @@ export function ProductCard({
         style={style}
       >
         <div className="relative overflow-hidden aspect-[4/3]">
-          <motion.img
-            src={imageUrl}
-            alt={name}
-            className="w-full h-full object-cover"
-            loading="lazy"
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.4 },
-            }}
-          />
+          {imageUrl.includes(".mp4") ? (
+            <motion.video
+              src={imageUrl}
+              className="w-full h-full object-cover"
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.4 },
+              }}
+              autoPlay={true}
+              muted
+            />
+          ) : (
+            <motion.img
+              src={imageUrl}
+              alt={name}
+              className="w-full h-full object-cover"
+              loading="lazy"
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.4 },
+              }}
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           <motion.div
             className="absolute top-3 left-3"
