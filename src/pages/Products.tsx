@@ -4,6 +4,7 @@ import { SectionHeader } from "../components/ui/section-header";
 import { products } from "../data/products";
 import { ProductCard } from "../components/ui/product-card";
 import { motion } from "framer-motion";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const ProductsPage = () => {
   useEffect(() => {
@@ -11,7 +12,6 @@ const ProductsPage = () => {
   }, []);
 
   const [selectedCategory, setSelectedCategory] = useState("All");
-
 
   const categories = [
     "All",
@@ -23,8 +23,8 @@ const ProductsPage = () => {
       ? products
       : products.filter((product) => product.category === selectedCategory);
 
-      console.log(filteredProducts);
-      
+  const [currentPage, setCurrentPage] = useState(1);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -36,20 +36,6 @@ const ProductsPage = () => {
     },
   };
 
-  const itemVariants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: (i: number) => ({
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 80,
-        damping: 12,
-        delay: i * 0.1,
-      },
-    }),
-  };
-
   const categoryVariants = {
     initial: { scale: 0.95, opacity: 0 },
     animate: { scale: 1, opacity: 1 },
@@ -57,6 +43,18 @@ const ProductsPage = () => {
     hover: { scale: 1.05 },
     tap: { scale: 0.98 },
   };
+
+  const handlePagePagination = (page: number, limit: number) => {
+    // Logic to handle pagination
+    const start = (page - 1) * limit;
+    const end = start + limit;
+    const paginatedProducts = filteredProducts.slice(start, end);
+    return paginatedProducts;
+  };
+
+  const paginationLimit = Math.ceil(
+    filteredProducts.length / (selectedCategory === "All" ? 15 : 10)
+  );
 
   return (
     <Layout>
@@ -145,7 +143,10 @@ const ProductsPage = () => {
             {categories.map((category, index) => (
               <motion.button
                 key={index}
-                onClick={() => setSelectedCategory(category as string)}
+                onClick={() => {
+                  setSelectedCategory(category as string);
+                  setCurrentPage(1);
+                }}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   selectedCategory === category
                     ? "bg-itek-600 text-white"
@@ -177,11 +178,13 @@ const ProductsPage = () => {
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
           >
-            {filteredProducts.map((product, index) => (
+            {handlePagePagination(
+              currentPage,
+              selectedCategory === "All" ? 15 : 10
+            ).map((product, index) => (
               <motion.div
                 key={product.id}
                 custom={index}
-                variants={itemVariants}
                 viewport={{ once: true }}
               >
                 <ProductCard
@@ -195,6 +198,43 @@ const ProductsPage = () => {
               </motion.div>
             ))}
           </motion.div>
+        </div>
+        {/* Pagination */}
+        <div className="mt-10 mx-10">
+          <div className="flex justify-between">
+            <div
+              className={`flex cursor-pointer ${
+                currentPage === 1 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              onClick={() => {
+                if (currentPage > 1) {
+                  setCurrentPage((prev) => prev - 1);
+                  console.log("Prev page");
+                }
+              }}
+              aria-disabled={currentPage === 1}
+            >
+              <ArrowLeft />
+              Previous
+            </div>
+            <div
+              className={`flex cursor-pointer ${
+                currentPage === paginationLimit
+                  ? "opacity-50 cursor-not-allowed"
+                  : ""
+              }`}
+              onClick={() => {
+                console.log(paginationLimit , currentPage)
+                if (currentPage < paginationLimit) {
+                  setCurrentPage((prev) => prev + 1);
+                  console.log("Next page");
+                }
+              }}
+            >
+              Next
+              <ArrowRight />
+            </div>
+          </div>
         </div>
       </section>
 
