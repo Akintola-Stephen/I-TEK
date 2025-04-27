@@ -61,6 +61,7 @@ export function ProductCard({
               }}
               autoPlay={true}
               muted
+              preload="none"
             />
           ) : (
             <motion.img
