@@ -8,7 +8,6 @@ import trafficBarrier from "../assets/images/Traffic Management System - Car Par
 import drone from "../assets/images/Surveillance/Drone.jpg";
 import motionDectector from "../assets/images/Surveillance/Video long range listening device/6654fe74-7f98-45e2-9e76-04546a7020f9.mp4";
 import longRangeCamera from "../assets/images/Surveillance/Video long range listening device/c4c5837e-539d-4a24-b58a-127c0cd42e04.mp4";
-import solarCCTV from "../assets/images/Surveillance/deployable cctv.jpg";
 import thermalCamera from "../assets/images/Surveillance/IMG_0103.mp4";
 import hiddenCamera from "../assets/images/Surveillance/Video long range listening device/f68a5f8f-4138-4c8b-927c-a9e096452eb4.mp4";
 import faceCamera from "../assets/images/Surveillance/IMG_2489.jpg";
