@@ -24,6 +24,8 @@ import keycardEntry from "../assets/images/Entry Systems/IMG_3194.jpg";
 import entry from "../assets/images/Entry Systems/323e2ff7-19d7-46a2-b3fc-7e6938f2af54.mp4";
 import internet from "../assets/images/Entry Systems/IMG_3197.jpg";
 import policeTalkie from "../assets/images/Command Centres - Control Rooms/police-walkie-talkie.jpg";
+import incidentManagment from "../assets/images/Entry Systems/incident-management-software-images.webp";
+import assetManagement from "../assets/images/Entry Systems/Asset Mangement System.png";
 
 export const products = [
   // Traffic Management System / Car Park System
@@ -747,6 +749,60 @@ export const products = [
       Storage: "10TB",
       Encryption: "AES-256",
       Connectivity: "Ethernet",
+      "User Capacity": "Unlimited",
+      "Operating System": "Windows/Linux",
+      Access: "Role-based",
+    },
+  },
+  {
+    id: "30",
+    name: "Incident Reporting and Management System",
+    category: "Software Systems",
+    imageUrl: incidentManagment,
+    description:
+      "A software platform for reporting, tracking, and managing incidents in real-time.",
+    fullDescription:
+      "The Incident Reporting and Management System streamlines the process of reporting, tracking, and resolving incidents. It provides real-time updates and analytics to improve response times and operational efficiency.\n\nThe system features:\n- Real-time incident reporting\n- Automated notifications and alerts\n- Analytics dashboard for trends\n- Integration with communication tools\n- Role-based access control\n- Mobile app for field reporting\n\nIdeal for security teams, law enforcement, and emergency response units, this system ensures efficient incident management.",
+    features: [
+      "Real-time reporting",
+      "Automated alerts",
+      "Analytics dashboard",
+      "Communication tool integration",
+      "Role-based access",
+      "Mobile app support",
+    ],
+    specifications: {
+      Model: "IRMS-200",
+      Storage: "5TB",
+      Encryption: "AES-256",
+      Connectivity: "Ethernet, Wi-Fi",
+      "User Capacity": "Unlimited",
+      "Operating System": "Windows/Linux",
+      Access: "Role-based",
+    },
+  },
+  {
+    id: "31",
+    name: "Asset Tracking and Management System",
+    category: "Software Systems",
+    imageUrl: assetManagement,
+    description:
+      "A system for tracking and managing physical and digital assets efficiently.",
+    fullDescription:
+      "The Asset Tracking and Management System provides a centralized platform to monitor and manage assets in real-time. It ensures accountability, reduces losses, and improves operational efficiency.\n\nThe system features:\n- Real-time asset tracking\n- Barcode and RFID integration\n- Maintenance scheduling\n- Customizable reports\n- Cloud-based storage\n- Mobile app for on-the-go management\n\nIdeal for warehouses, offices, and logistics companies, this system ensures efficient asset management.",
+    features: [
+      "Real-time tracking",
+      "Barcode/RFID integration",
+      "Maintenance scheduling",
+      "Customizable reports",
+      "Cloud storage",
+      "Mobile app support",
+    ],
+    specifications: {
+      Model: "ATMS-300",
+      Storage: "10TB",
+      Encryption: "AES-256",
+      Connectivity: "Ethernet, Wi-Fi",
       "User Capacity": "Unlimited",
       "Operating System": "Windows/Linux",
       Access: "Role-based",
